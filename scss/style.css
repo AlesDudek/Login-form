@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  max-width: 1420px;
+  margin: 0 auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: #888b8c;
+  font-family: 'Poppins', sans-serif;
+  /*************HEADER-End****************/
+}
+
+body .from {
+  background: #fff;
+  border-radius: 12px;
+  /******** Header*********/
+}
+
+body .from header h1 {
+  margin-top: 39px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+body .from header .header__Link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 39px;
+}
+
+body .from header .header__Link .header__Link__borderLeft, body .from header .header__Link .header__Link__borderRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .from header .header__Link .header__Link__borderLeft {
+  border: 1px solid #5191C3;
+  border-radius: 8px;
+  width: 177px;
+  height: 42px;
+}
+
+body .from header .header__Link .header__Link__borderLeft .header__Link__borderLeft__img {
+  margin-right: 8px;
+}
+
+body .from header .header__Link .header__Link__borderLeft .header__Link__borderLeft__a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #5191C3;
+}
+
+body .from header .header__Link .header__Link__borderLeft:hover {
+  background: #5191C3;
+}
+
+body .from header .header__Link .header__Link__borderLeft:hover .header__Link__borderLeft__a {
+  color: #fff;
+}
+
+body .from header .header__Link .header__Link__borderRight {
+  border: 1px solid #F17254;
+  border-radius: 8px;
+  width: 156px;
+  height: 42px;
+  margin-left: 16px;
+}
+
+body .from header .header__Link .header__Link__borderRight .header__Link__borderRight__img {
+  margin-right: 8px;
+}
+
+body .from header .header__Link .header__Link__borderRight .header__Link__borderRight__a {
+  text-decoration: none;
+  color: #F17254;
+}
+
+body .from header .header__Link .header__Link__borderRight:hover {
+  background: #F17254;
+}
+
+body .from header .header__Link .header__Link__borderRight:hover .header__Link__borderRight__a {
+  color: #fff;
+}
+
+body .from header .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+body .from header .line .line__left {
+  margin-top: 41px;
+  margin-right: 23px;
+}
+
+body .from header .line .line__text {
+  margin-top: 41px;
+  margin-right: 23px;
+  color: #C6CBCD;
+}
+
+body .from header .line .line__right {
+  margin-top: 41px;
+}
+/*# sourceMappingURL=style.css.map */

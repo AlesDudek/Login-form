@@ -1,0 +1,102 @@
+@import "variabiles";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  max-width: 1420px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: $greyBody;
+  font-family: 'Poppins', sans-serif;
+  .from{
+    background: $white;
+    border-radius: 12px;
+    /******** Header*********/
+    header{
+      h1{
+        margin-top: 39px;
+        font-size: 32px;
+        font-weight: bold;
+      }
+      .header__Link{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 39px;
+        .header__Link__borderLeft, .header__Link__borderRight{
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+        }
+        .header__Link__borderLeft{
+          border: 1px solid $blueText;
+          border-radius: 8px;
+          width: 177px;
+          height: 42px;
+          .header__Link__borderLeft__img{
+            margin-right: 8px;
+          }
+          .header__Link__borderLeft__a{
+            text-decoration: none;
+            font-size: 16px;
+            color: $blueText;
+          }
+        }
+        .header__Link__borderLeft:hover{
+          background: $blueHoverBg;
+          .header__Link__borderLeft__a{
+            color: $white;
+          }
+        }
+        .header__Link__borderRight{
+          border: 1px solid $orange;
+          border-radius: 8px;
+          width: 156px;
+          height: 42px;
+          margin-left: 16px;
+          .header__Link__borderRight__img{
+            margin-right: 8px;
+          }
+          .header__Link__borderRight__a{
+            text-decoration: none;
+            color: $orange;
+          }
+        }
+        .header__Link__borderRight:hover{
+          background: $orange;
+          .header__Link__borderRight__a{
+            color: $white;
+          }
+        }
+      }
+      .line{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .line__left{
+          margin-top: 41px;
+          margin-right: 23px;
+        }
+        .line__text{
+          margin-top: 41px;
+          margin-right: 23px;
+          color: $grey;
+        }
+        .line__right{
+          margin-top: 41px;
+        }
+      }
+    }
+  }
+  /*************HEADER-End****************/
+}

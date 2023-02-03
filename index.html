@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./scss/style.css">
+  <title>Registrace</title>
+</head>
+<body>
+  <form class="from">
+    <header>
+      <h1>Registrace</h1>
+      <div class="header__Link">
+        <div class="header__Link__borderLeft">
+          <img src="#" alt="f" class="header__Link__borderLeft__img">
+          <a href="#" class="header__Link__borderLeft__a">přes Facebook</a>
+        </div>
+        <div class="header__Link__borderRight">
+          <img src="#" alt="g" class="header__Link__borderRight__img">
+          <a href="#" class="header__Link__borderRight__a">přes Google</a>
+        </div>
+      </div>
+      <div class="line">
+        <img src="./img/Line.svg" alt="" class="line__left">
+        <p class="line__text">nebo</p>
+        <img src="./img/Line.svg" alt="" class="line__right">
+      </div>
+    </header>
+    <section id="section">
+      <label for="fname">Jméno a přijímení</label>
+      <input type="text" id="fname" name="fname">
+      <label for="femail">E-mail</label>
+      <input type="email" id="femail" name="femail">
+      <label for="pwd">Zvolte si heslo</label>
+      <input type="password" id="pwd" name="pwd">
+      <div class="section__submit">
+        <input type="submit" value="Pokračovat">
+      </div>
+    </section>
+    <a href="#section">Již máte účet? Přejít na přihlášení</a>
+  </form>
+</body>
+</html>
