@@ -28,17 +28,29 @@
       </div>
     </header>
     <section id="section" class="section">
-      <label for="fname" class="section__label__one">Jméno a přijímení</label>
-      <input type="text" id="fname" name="fname" class="section__input">
-      <label for="femail" class="section__label__two">E-mail</label>
-      <input type="email" id="femail" name="femail" placeholder="Vložte Váš e-mail" class="section__input">
-      <label for="pwd" class="section__label__three">Zvolte si heslo</label>
-      <input type="password" id="pwd" name="pwd" placeholder="Zvolte si heslo" class="section__input">
+      <label for="fname" class="section__label__one">
+        Jméno a přijímení
+      </label>
+      <input type="text" id="fname" name="fname" class="section__input fullName">
+      <label for="femail" class="section__label__two">
+        E-mail
+      </label>
+      <input type="email" id="femail" name="femail" placeholder="Vložte Váš e-mail" class="section__input fullEmail">
+      <div class="section__warning">
+        <span class="section__warning__p" id="text">
+          
+        </span>
+      </div>
+      <label for="pwd" class="section__label__three">
+        Zvolte si heslo
+      </label>
+      <input type="password" id="pwd" name="pwd" placeholder="Zvolte si heslo" class="section__input fullPwd">
       <div class="section__submit">
-        <input type="submit" value="POKRAČOVAT" class="section__submit__input">
+        <input type="submit" value="POKRAČOVAT" class="section__submit__input" id="submit">
       </div>
       <a href="#section" class="section__a">Již máte účet? Přejít na přihlášení</a>
     </section>
   </form>
+  <script src="./script.js"></script>
 </body>
 </html>

@@ -168,6 +168,17 @@ body .section label {
           align-items: flex-start;
 }
 
+body .section .section__warning {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .section .section__warning .section__warning__p {
+  color: #C95050;
+  font-size: 12px;
+}
+
 body .section .section__label__one {
   margin-top: 23px;
 }

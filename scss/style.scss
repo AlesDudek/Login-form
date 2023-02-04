@@ -110,6 +110,14 @@ body{
       display: flex;
       align-items: flex-start;
     }
+    .section__warning{
+      display: flex;
+      
+      .section__warning__p{
+        color: $warning;
+        font-size: 12px;
+      }
+    }
     .section__label__one{
       margin-top: 23px;
     }
