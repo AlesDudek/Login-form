@@ -171,4 +171,50 @@ body .section .section__a {
   color: #C6CBCD;
   font-size: 14px;
   opacity: 0.8;
+}
+
+/**************Responsiveness*********************/
+@media (max-width: 526px) {
+  body .section {
+    justify-content: center;
+    align-items: center;
+  }
+  body .section .section__input--eye {
+    left: 90px;
+  }
+  body .section .section__submit .section__submit__input {
+    width: 220px;
+  }
+}
+@media (max-width: 348px) {
+  body .from header .header__Link {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+  body .from header .header__Link .header__Link__borderLeft {
+    width: 220px;
+    order: 2;
+    margin-top: 24px;
+  }
+  body .from header .header__Link .header__Link__borderRight {
+    width: 220px;
+    margin-left: 0;
+  }
+  body .from header .line {
+    flex-direction: column;
+    margin: 0;
+  }
+  body .from header .line .line__left {
+    margin-top: 20px;
+    margin-right: 0;
+  }
+  body .from header .line .line__text {
+    margin-top: 20px;
+    margin-right: 0;
+  }
+  body .from header .line .line__right {
+    margin-top: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

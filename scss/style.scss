@@ -174,3 +174,59 @@ body{
   }
   /****************SECTION-END****************/
 }
+/**************Responsiveness*********************/
+@media (max-width:526px) {
+  body{
+    .section{
+      justify-content: center;
+      align-items: center;
+      .section__input--eye{
+        left: 90px;
+      }
+      .section__submit{
+        .section__submit__input{
+          width: 220px;
+        }
+      }
+    }
+  }
+}
+@media (max-width:348px) {
+  body{
+    .from{
+      header{
+        .header__Link{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 25px;
+          .header__Link__borderLeft{
+            width: 220px;
+            order: 2;
+            margin-top: 24px;
+          }
+          .header__Link__borderRight{
+            width: 220px;
+            margin-left: 0;
+          }
+        }
+        .line{
+          flex-direction: column;
+          margin: 0;
+          .line__left{
+            margin-top: 20px;
+            margin-right: 0;
+          }
+          .line__text{
+            margin-top: 20px;
+            margin-right: 0;
+          }
+          .line__right{
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+    
+  }
+}
