@@ -157,6 +157,7 @@ body{
         border: none;
         border-radius: 8px;
         color: $white;
+        transition: .2s all;
       }
       .section__submit__input:hover{
         cursor: pointer;
@@ -170,6 +171,7 @@ body{
       color: $grey;
       font-size: 14px;
       opacity: 0.8;
+      
     }
   }
   /****************SECTION-END****************/
