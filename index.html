@@ -13,11 +13,11 @@
       <h1>Registrace</h1>
       <div class="header__Link">
         <div class="header__Link__borderLeft">
-          <img src="#" alt="f" class="header__Link__borderLeft__img">
+          <img src="./img/facebook.png" alt="f" width="24px"  class="header__Link__borderLeft__img">
           <a href="#" class="header__Link__borderLeft__a">přes Facebook</a>
         </div>
         <div class="header__Link__borderRight">
-          <img src="#" alt="g" class="header__Link__borderRight__img">
+          <img src="./img/google.png" alt="g" class="header__Link__borderRight__img">
           <a href="#" class="header__Link__borderRight__a">přes Google</a>
         </div>
       </div>
@@ -31,7 +31,7 @@
       <label for="fname" class="section__label__one">
         Jméno a přijímení
       </label>
-      <input type="text" id="fname" name="fname" class="section__input fullName">
+      <input type="text" id="fname" name="fname" class="section__input fullName" >
       <label for="femail" class="section__label__two">
         E-mail
       </label>
@@ -41,10 +41,11 @@
           
         </span>
       </div>
-      <label for="pwd" class="section__label__three">
+      <label for="password" class="section__label__three">
         Zvolte si heslo
       </label>
-      <input type="password" id="pwd" name="pwd" placeholder="Zvolte si heslo" class="section__input fullPwd">
+      <input type="password" id="password" name="password" placeholder="Zvolte si heslo" class="section__input fullPwd" >
+        <img src="./img/eye.png" alt="Hide Password" id="togglePwd" class="section__input--eye" onclick='togglePwdVisibility()' >
       <div class="section__submit">
         <input type="submit" value="POKRAČOVAT" class="section__submit__input" id="submit">
       </div>

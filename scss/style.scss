@@ -1,5 +1,5 @@
 @import "variabiles";
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400&family=Poppins:wght@400;600;700&display=swap');
 
 *{
   margin: 0;
@@ -92,6 +92,7 @@ body{
           margin-top: 41px;
           margin-right: 23px;
           color: $grey;
+          font-size: 12px;
         }
         .line__right{
           margin-top: 41px;
@@ -109,6 +110,12 @@ body{
     label{
       display: flex;
       align-items: flex-start;
+      font-size: 16px;
+      font-weight: 500;
+      
+    }
+    ::placeholder{
+      opacity: 0.5;
     }
     .section__warning{
       display: flex;
@@ -129,22 +136,27 @@ body{
       border: 1px solid $grey;
       border-radius: 8px;
       padding: 16px;
-    }
-    .section__input:hover{
       cursor: pointer;
-      background-color: $grey;
+      color: $grey;
+      font-size: 16px;
+    }
+    .section__input--eye{
+      width: 24px;
+      position: relative;
+      left: 489px;
+      bottom: 35px;
     }
     .section__submit{
       margin-top: 36px;
       .section__submit__input{
         font-size: 18px;
+        font-weight: bold;
         width: 522px;
         height: 50px;
         background-color: $btnSubmit;
         border: none;
         border-radius: 8px;
         color: $white;
-        font-weight: bold;
       }
       .section__submit__input:hover{
         cursor: pointer;
@@ -156,6 +168,8 @@ body{
       margin-bottom: 25px;
       text-decoration: none;
       color: $grey;
+      font-size: 14px;
+      opacity: 0.8;
     }
   }
   /****************SECTION-END****************/

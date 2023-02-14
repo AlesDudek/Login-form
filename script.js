@@ -1,8 +1,10 @@
 
 const section = document.querySelector("section");
 const fullEmail = document.querySelector(".fullEmail");
-const submit = document.querySelector("#submit")
-//Váš e-mail je neplatný, zkuste to znovu
+const submit = document.querySelector("#submit");
+const inputPwd = document.querySelector("#password");
+const togglePwd = document.querySelector("img[onclick='togglePwdVisibility()']");
+
 
 let pattern = /^([a-z\d\.]+)@([a-z\d\-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/
 
@@ -32,4 +34,16 @@ fullEmail.addEventListener("input", function(){
     section.classList.remove("invalid")
   }
 })
-// document.getElementsByTagName("submit").style.background="#33A9CE"
+/*** toggle***/
+function togglePwdVisibility(){
+  if(inputPwd.type === "password"){
+    inputPwd.type = "text";
+    togglePwd.src = "./img/eye.png";
+    togglePwd.alt = "Hide Password"
+  }else{
+    inputPwd.type = "password";
+    togglePwd.src = "./img/eye.png";
+    togglePwd.alt = "Show Password"
+  }
+}
+
