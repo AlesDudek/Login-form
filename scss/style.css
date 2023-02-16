@@ -40,6 +40,7 @@ body .from header .header__Link .header__Link__borderLeft, body .from header .he
   justify-content: center;
   text-align: center;
   align-items: center;
+  transition: 0.2s all;
 }
 body .from header .header__Link .header__Link__borderLeft {
   border: 1px solid #5191C3;

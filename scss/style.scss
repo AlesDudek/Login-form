@@ -36,6 +36,7 @@ body{
           justify-content: center;
           text-align: center;
           align-items: center;
+          transition: .2s all;
         }
         .header__Link__borderLeft{
           border: 1px solid $blueText;
