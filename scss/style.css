@@ -153,6 +153,7 @@ body .section .section__submit {
   margin-top: 36px;
 }
 body .section .section__submit .section__submit__input {
+  max-width: 100%;
   font-size: 18px;
   font-weight: bold;
   width: 522px;
