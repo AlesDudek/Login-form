@@ -135,6 +135,7 @@ body .section .section__label__two, body .section .section__label__three {
   margin-top: 24px;
 }
 body .section .section__input {
+  width: 100%;
   height: 48px;
   border: 1px solid #C6CBCD;
   border-radius: 8px;
@@ -143,11 +144,15 @@ body .section .section__input {
   color: #C6CBCD;
   font-size: 16px;
 }
+body .section .pwd__input {
+  position: relative;
+}
 body .section .section__input--eye {
   width: 24px;
-  position: relative;
-  left: 489px;
-  bottom: 35px;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(50%);
 }
 body .section .section__submit {
   margin-top: 36px;
@@ -177,4 +182,36 @@ body .section .section__a {
   opacity: 0.8;
 }
 
-/**************Responsiveness*********************//*# sourceMappingURL=style.css.map */
+/**************Responsiveness*********************/
+@media (max-width: 522px) {
+  body .form header .line {
+    flex-direction: column;
+  }
+  body .form header .line .line__left {
+    margin-right: 0;
+  }
+  body .form header .line .line__text {
+    margin-top: 20px;
+    margin-right: 0;
+  }
+  body .form header .line .line__right {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 354px) {
+  body .form header .header__Link {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  body .form header .header__Link__borderLeft {
+    order: 2;
+    margin-top: 20px;
+  }
+  body .form header .header__Link__borderRight {
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 15px;
+  }
+}/*# sourceMappingURL=style.css.map */

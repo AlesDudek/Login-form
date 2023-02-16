@@ -134,6 +134,7 @@ body{
       margin-top: 24px;
     }
     .section__input{
+      width: 100%;
       height: 48px;
       border: 1px solid $grey;
       border-radius: 8px;
@@ -142,11 +143,16 @@ body{
       color: $grey;
       font-size: 16px;
     }
+    .pwd__input{
+      
+      position: relative;
+    }
     .section__input--eye{
       width: 24px;
-      position: relative;
-      left: 489px;
-      bottom: 35px;
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(50%);
     }
     .section__submit{
       margin-top: 36px;
@@ -180,6 +186,51 @@ body{
   /****************SECTION-END****************/
 }
 /**************Responsiveness*********************/
+@media (max-width:522px) {
+  body{
+    .form{
+      header{
+        .line{
+          flex-direction: column;
+          .line__left{
+            margin-right: 0;
+
+          }
+          .line__text{
+            margin-top: 20px;
+            margin-right: 0;
+          }
+          .line__right{
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width:354px){
+  body{
+    .form{
+      header{
+        .header__Link{
+          flex-direction: column;
+          text-align: center;
+          align-items: center;
+          margin: 0 auto;
+        }
+        .header__Link__borderLeft{
+          order: 2;
+          margin-top: 20px;
+        }
+        .header__Link__borderRight{
+          margin-top: 20px;
+          margin-left: 0;
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
 // @media (max-width:526px) {
 //   body{
 //     .section{
