@@ -1,5 +1,5 @@
 @import "variabiles";
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400&family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 *{
   margin: 0;
@@ -37,7 +37,7 @@ body{
           justify-content: center;
           text-align: center;
           align-items: center;
-          transition: .2s all;
+          transition: .6s all;
         }
         .header__Link__borderLeft{
           border: 1px solid $blueText;
@@ -50,6 +50,7 @@ body{
           .header__Link__borderLeft__a{
             text-decoration: none;
             font-size: 16px;
+            font-weight: 500;
             color: $blueText;
           }
         }
@@ -70,6 +71,8 @@ body{
           }
           .header__Link__borderRight__a{
             text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
             color: $orange;
           }
         }
@@ -85,7 +88,7 @@ body{
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin: 0 24px 0 24px;
+        width: 100%;
         .line__left{
           margin-top: 41px;
           margin-right: 23px;
@@ -118,6 +121,7 @@ body{
     }
     ::placeholder{
       opacity: 0.5;
+      font-size: 16px;
     }
     .section__warning{
       display: flex;
@@ -140,7 +144,6 @@ body{
       border-radius: 8px;
       padding: 16px;
       cursor: pointer;
-      color: $grey;
       font-size: 16px;
     }
     .pwd__input{
@@ -177,8 +180,8 @@ body{
       margin-top: 40px;
       margin-bottom: 25px;
       text-decoration: none;
-      color: $grey;
       font-size: 14px;
+      font-weight: 400;
       opacity: 0.8;
       
     }

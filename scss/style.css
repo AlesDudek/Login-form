@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400&family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -41,7 +41,7 @@ body .form header .header__Link .header__Link__borderLeft, body .form header .he
   justify-content: center;
   text-align: center;
   align-items: center;
-  transition: 0.2s all;
+  transition: 0.6s all;
 }
 body .form header .header__Link .header__Link__borderLeft {
   border: 1px solid #5191C3;
@@ -55,6 +55,7 @@ body .form header .header__Link .header__Link__borderLeft .header__Link__borderL
 body .form header .header__Link .header__Link__borderLeft .header__Link__borderLeft__a {
   text-decoration: none;
   font-size: 16px;
+  font-weight: 500;
   color: #5191C3;
 }
 body .form header .header__Link .header__Link__borderLeft:hover {
@@ -75,6 +76,8 @@ body .form header .header__Link .header__Link__borderRight .header__Link__border
 }
 body .form header .header__Link .header__Link__borderRight .header__Link__borderRight__a {
   text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
   color: #F17254;
 }
 body .form header .header__Link .header__Link__borderRight:hover {
@@ -88,7 +91,7 @@ body .form header .line {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0 24px 0 24px;
+  width: 100%;
 }
 body .form header .line .line__left {
   margin-top: 41px;
@@ -117,9 +120,11 @@ body .section label {
 }
 body .section ::-moz-placeholder {
   opacity: 0.5;
+  font-size: 16px;
 }
 body .section ::placeholder {
   opacity: 0.5;
+  font-size: 16px;
 }
 body .section .section__warning {
   display: flex;
@@ -141,7 +146,6 @@ body .section .section__input {
   border-radius: 8px;
   padding: 16px;
   cursor: pointer;
-  color: #C6CBCD;
   font-size: 16px;
 }
 body .section .pwd__input {
@@ -177,8 +181,8 @@ body .section .section__a {
   margin-top: 40px;
   margin-bottom: 25px;
   text-decoration: none;
-  color: #C6CBCD;
   font-size: 14px;
+  font-weight: 400;
   opacity: 0.8;
 }
 
