@@ -13,12 +13,11 @@
       <h1>Registrace</h1>
       <div class="header__Link">
         <div class="header__Link__borderLeft">
-          <img src="./img/facebook.png" alt="f" width="24px"  class="header__Link__borderLeft__img">
-          <a href="#" class="header__Link__borderLeft__a">přes Facebook</a>
+          <a href="#" class="header__Link__borderLeft__a"><img src="./img/facebook.png" alt="f" width="24px"  class="header__Link__borderLeft__img">přes Facebook</a>
         </div>
         <div class="header__Link__borderRight">
-          <img src="./img/google.png" alt="g" class="header__Link__borderRight__img">
-          <a href="#" class="header__Link__borderRight__a">přes Google</a>
+          
+          <a href="#" class="header__Link__borderRight__a"><img src="./img/google.png" alt="g" class="header__Link__borderRight__img">přes Google</a>
         </div>
       </div>
       <div class="line">
@@ -33,27 +32,33 @@
         Jméno a přijímení
       </label>
       <input type="text" id="fname" name="fname" class="section__input fullName" >
+      <div class="section__warning">
+        <span class="section__warning__p" id="textName">
+          Zadej Jmeno a přijímení
+        </span>
+      </div>
       <label for="femail" class="section__label__two">
         E-mail
       </label>
       <input type="email" id="femail" name="femail" placeholder="Vložte Váš e-mail" class="section__input fullEmail">
       <div class="section__warning">
-        <span class="section__warning__p" id="text">
-          
+        <span class="section__warning__p" id="textEmail">
+          Zadej svuj E-mail
         </span>
       </div>
       <div class="pwd__input">
         <label for="password" class="section__label__three">
           Zvolte si heslo
         </label>
-        <input type="password" id="password" name="password" placeholder="Zvolte si heslo" class="section__input fullPwd" >
-          <img src="./img/eye.png" alt="Hide Password" id="togglePwd" class="section__input--eye" onclick='togglePwdVisibility()' >
+        <input type="password" id="password" name="password" placeholder="Zvolte si heslo" class="section__input fullPwd">
+        <img src="./img/eye.png" alt="Hide Password" id="togglePwd" class="section__input--eye" onclick="togglePwdVisibility()">
+        
       </div>
 
       <div class="section__submit">
         <input type="submit" value="POKRAČOVAT" class="section__submit__input" id="submit">
       </div>
-      <a href="#section" class="section__a">Již máte účet? Přejít na přihlášení</a>
+      <a href="#section" class="section__a"><span>Již máte účet? Přejít na přihlášení</span></a>
     </section>
   </form>
   <script src="./script.js"></script>

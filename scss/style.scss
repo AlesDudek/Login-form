@@ -39,18 +39,23 @@ body{
           align-items: center;
           transition: .6s all;
         }
+        .header__Link__borderLeft__a, .header__Link__borderRight__a{
+          display: flex;
+          align-items: center;
+          text-align: center;
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: 500;
+        }
+        .header__Link__borderLeft__img, .header__Link__borderRight__img{
+          margin-right: 8px;
+        }
         .header__Link__borderLeft{
           border: 1px solid $blueText;
           border-radius: 8px;
           width: 177px;
           height: 42px;
-          .header__Link__borderLeft__img{
-            margin-right: 8px;
-          }
           .header__Link__borderLeft__a{
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: 500;
             color: $blueText;
           }
         }
@@ -66,13 +71,7 @@ body{
           width: 156px;
           height: 42px;
           margin-left: 16px;
-          .header__Link__borderRight__img{
-            margin-right: 8px;
-          }
           .header__Link__borderRight__a{
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: 500;
             color: $orange;
           }
         }
@@ -89,13 +88,11 @@ body{
         align-items: center;
         text-align: center;
         width: 100%;
-        .line__left{
+        .line__left,.line__text{
           margin-top: 41px;
           margin-right: 23px;
         }
         .line__text{
-          margin-top: 41px;
-          margin-right: 23px;
           color: $grey;
           font-size: 12px;
         }
@@ -119,9 +116,13 @@ body{
       font-weight: 500;
       
     }
+    .section__warning__p{
+      display: none;
+    }
     ::placeholder{
       opacity: 0.5;
       font-size: 16px;
+      font-family: 'Poppins', sans-serif;
     }
     .section__warning{
       display: flex;
@@ -143,7 +144,6 @@ body{
       border: 1px solid $grey;
       border-radius: 8px;
       padding: 16px;
-      cursor: pointer;
       font-size: 16px;
     }
     .pwd__input{
@@ -184,6 +184,9 @@ body{
       font-weight: 400;
       opacity: 0.8;
       color: $grey;
+      span{
+        border-bottom: 1px solid $grey;
+      }
     }
   }
   /****************SECTION-END****************/
@@ -213,6 +216,7 @@ body{
 }
 @media(max-width:354px){
   body{
+    padding: 15px 16px;
     .form{
       header{
         .header__Link{

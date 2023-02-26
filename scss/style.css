@@ -13,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: #888b8c;
+  background: #F5F5F5;
   font-family: "Poppins", sans-serif;
   /*************HEADER-End****************/
   /**************SECTION**************/
@@ -43,19 +43,24 @@ body .form header .header__Link .header__Link__borderLeft, body .form header .he
   align-items: center;
   transition: 0.6s all;
 }
+body .form header .header__Link .header__Link__borderLeft__a, body .form header .header__Link .header__Link__borderRight__a {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+body .form header .header__Link .header__Link__borderLeft__img, body .form header .header__Link .header__Link__borderRight__img {
+  margin-right: 8px;
+}
 body .form header .header__Link .header__Link__borderLeft {
   border: 1px solid #5191C3;
   border-radius: 8px;
   width: 177px;
   height: 42px;
 }
-body .form header .header__Link .header__Link__borderLeft .header__Link__borderLeft__img {
-  margin-right: 8px;
-}
 body .form header .header__Link .header__Link__borderLeft .header__Link__borderLeft__a {
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
   color: #5191C3;
 }
 body .form header .header__Link .header__Link__borderLeft:hover {
@@ -71,13 +76,7 @@ body .form header .header__Link .header__Link__borderRight {
   height: 42px;
   margin-left: 16px;
 }
-body .form header .header__Link .header__Link__borderRight .header__Link__borderRight__img {
-  margin-right: 8px;
-}
 body .form header .header__Link .header__Link__borderRight .header__Link__borderRight__a {
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
   color: #F17254;
 }
 body .form header .header__Link .header__Link__borderRight:hover {
@@ -93,13 +92,11 @@ body .form header .line {
   text-align: center;
   width: 100%;
 }
-body .form header .line .line__left {
+body .form header .line .line__left, body .form header .line .line__text {
   margin-top: 41px;
   margin-right: 23px;
 }
 body .form header .line .line__text {
-  margin-top: 41px;
-  margin-right: 23px;
   color: #C6CBCD;
   font-size: 12px;
 }
@@ -118,13 +115,18 @@ body .section label {
   font-size: 16px;
   font-weight: 500;
 }
+body .section .section__warning__p {
+  display: none;
+}
 body .section ::-moz-placeholder {
   opacity: 0.5;
   font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
 body .section ::placeholder {
   opacity: 0.5;
   font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
 body .section .section__warning {
   display: flex;
@@ -145,7 +147,6 @@ body .section .section__input {
   border: 1px solid #C6CBCD;
   border-radius: 8px;
   padding: 16px;
-  cursor: pointer;
   font-size: 16px;
 }
 body .section .pwd__input {
@@ -186,6 +187,9 @@ body .section .section__a {
   opacity: 0.8;
   color: #C6CBCD;
 }
+body .section .section__a span {
+  border-bottom: 1px solid #C6CBCD;
+}
 
 /**************Responsiveness*********************/
 @media (max-width: 522px) {
@@ -204,6 +208,9 @@ body .section .section__a {
   }
 }
 @media (max-width: 354px) {
+  body {
+    padding: 15px 16px;
+  }
   body .form header .header__Link {
     flex-direction: column;
     text-align: center;

@@ -2,40 +2,31 @@
 const section = document.querySelector("section");
 const fullEmail = document.querySelector(".fullEmail");
 const submit = document.querySelector("#submit");
-const inputPwd = document.querySelector("#password");
-const togglePwd = document.querySelector("img[onclick='togglePwdVisibility()']");
+const passwordInput = document.querySelector("#password");
+const eyeIcon = document.querySelector("#togglePwd");
+const eyeClosed = document.querySelector("#eyeClosed")
+
 const fullName = document.querySelector(".fullName")
 const form = document.querySelector(".form")
 let pattern = /^([a-z\d\.]+)@([a-z\d\-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/
 
-const text = document.querySelector("#text")
+const textemail = document.querySelector("#textEmail")
+const textName = document.querySelector("#textName")
 
-// zaptat se proč to nefunguje na section ale na celou stranku
-// section.addEventListener("submit", function(event){
-//   console.log("da");
-//   event.preventDefault()
-//   if(fullName.value === ""){
-//     fullName.style.borderWidth = "6px"
-//     fullName.style.borderStyle = "solid"
-//     fullName.style.borderRadius = "5px"
-//     fullName.style.borderColor = "red"
-//   }else{
-//     fullName.style.borderWidth = "1px"
-//     fullName.style.borderColor = "pink"
-//   }
-// })
+
 
 form.addEventListener("submit", function(event){
   event.preventDefault()
   if(fullName.value === ""){
-    fullName.style.borderWidth = "6px"
-    fullName.style.borderStyle = "solid"
-    fullName.style.borderRadius = "5px"
-    fullName.style.borderColor = "red"
+    textName.style.display = "block"
+  }
+  if(fullEmail.value === ""){
+    textemail.style.display = "block"
   }
 })
 fullName.addEventListener("input", function(){
   if(fullName.value !== ""){
+    textName.style.display = "none"
     fullName.style.borderWidth = "1px"
     fullName.style.borderStyle = "solid"
     fullName.style.borderRadius = "5px"
@@ -46,10 +37,10 @@ fullName.addEventListener("input", function(){
 fullEmail.addEventListener("input", function(){
   let emailValue = fullEmail.value
   if(emailValue.match(pattern)){
-    text.textContent = ""
+    textemail.textContent = ""
     submit.style.background = "#49BCE0"
   }else{
-    text.textContent = "Váš e-mail je neplatný, zkuste to znovu"
+    textemail.textContent = "Váš e-mail je neplatný, zkuste to znovu"
     submit.style.background = "#C6CBCD"
   }
   
@@ -60,25 +51,20 @@ fullEmail.addEventListener("input", function(){
   }
 })
 /*** toggle***/
-function togglePwdVisibility(){
-  if(inputPwd.type === "password"){
-    inputPwd.type = "text";
-    togglePwd.src = "./img/eye.png";
-    togglePwd.alt = "Hide Password"
-  }else{
-    inputPwd.type = "password";
-    togglePwd.src = "./img/eye.png";
-    togglePwd.alt = "Show Password"
+
+function togglePwdVisibility() {
+
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+    eyeIcon.src = "./img/eyeclosed.svg";
+    //eyeIcon.style.top = "0px"
+    eyeIcon.alt = "Hide Password";
+  } else {
+    passwordInput.type = "password";
+    eyeIcon.src = "./img/eye.png";
+    eyeIcon.alt = "Show Password";
   }
 }
 
-// fullName.addEventListener("input", function(){
-//   let nameValue = fullName.value
-//   if(nameValue === ""){
-//     fullName.style.borderWidth = "1px"
-//     fullName.style.borderStyle = "solid"
-//     fullName.style.borderRadius = "5px"
-//     fullName.style.borderColor = "red"
-//   }
-// })
+
 
