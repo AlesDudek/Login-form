@@ -57,11 +57,11 @@ function togglePwdVisibility() {
   if (passwordInput.type === "password") {
     passwordInput.type = "text";
     eyeIcon.src = "./img/eyeclosed.svg";
-    //eyeIcon.style.top = "0px"
+    //eyeIcon.style.top = "-4px"
     eyeIcon.alt = "Hide Password";
   } else {
     passwordInput.type = "password";
-    eyeIcon.src = "./img/eye.png";
+    eyeIcon.src = "./img/eye.svg";
     eyeIcon.alt = "Show Password";
   }
 }
