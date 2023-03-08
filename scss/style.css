@@ -60,13 +60,13 @@ body .form header .header__Link .header__Link__borderLeft {
   width: 177px;
   height: 42px;
 }
-body .form header .header__Link .header__Link__borderLeft .header__Link__borderLeft__a {
+body .form header .header__Link .header__Link__borderLeft__a {
   color: #5191C3;
 }
 body .form header .header__Link .header__Link__borderLeft:hover {
   background: #5191C3;
 }
-body .form header .header__Link .header__Link__borderLeft:hover .header__Link__borderLeft__a {
+body .form header .header__Link .header__Link__borderLeft:hover__a {
   color: #fff;
 }
 body .form header .header__Link .header__Link__borderRight {
@@ -76,13 +76,13 @@ body .form header .header__Link .header__Link__borderRight {
   height: 42px;
   margin-left: 16px;
 }
-body .form header .header__Link .header__Link__borderRight .header__Link__borderRight__a {
+body .form header .header__Link .header__Link__borderRight__a {
   color: #F17254;
 }
 body .form header .header__Link .header__Link__borderRight:hover {
   background: #F17254;
 }
-body .form header .header__Link .header__Link__borderRight:hover .header__Link__borderRight__a {
+body .form header .header__Link .header__Link__borderRight:hover__a {
   color: #fff;
 }
 body .form header .line {
@@ -135,10 +135,10 @@ body .section .section__warning .section__warning__p {
   color: #C95050;
   font-size: 12px;
 }
-body .section .section__label__one {
+body .section .section__label__name {
   margin-top: 23px;
 }
-body .section .section__label__two, body .section .section__label__three {
+body .section .section__label, body .section .section__label {
   margin-top: 24px;
 }
 body .section .section__input {
@@ -162,7 +162,7 @@ body .section .section__input--eye {
 body .section .section__submit {
   margin-top: 36px;
 }
-body .section .section__submit .section__submit__input {
+body .section .section__submit__input {
   max-width: 100%;
   font-size: 18px;
   font-weight: bold;
@@ -174,7 +174,7 @@ body .section .section__submit .section__submit__input {
   color: #fff;
   transition: 0.2s all;
 }
-body .section .section__submit .section__submit__input:hover {
+body .section .section__submit__input:hover {
   cursor: pointer;
   background-color: #33A9CE;
 }

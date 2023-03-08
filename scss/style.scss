@@ -55,13 +55,13 @@ body{
           border-radius: 8px;
           width: 177px;
           height: 42px;
-          .header__Link__borderLeft__a{
+          &__a{
             color: $blueText;
           }
         }
         .header__Link__borderLeft:hover{
           background: $blueHoverBg;
-          .header__Link__borderLeft__a{
+          &__a{
             color: $white;
           }
         }
@@ -71,13 +71,13 @@ body{
           width: 156px;
           height: 42px;
           margin-left: 16px;
-          .header__Link__borderRight__a{
+          &__a{
             color: $orange;
           }
         }
         .header__Link__borderRight:hover{
           background: $orange;
-          .header__Link__borderRight__a{
+          &__a{
             color: $white;
           }
         }
@@ -132,10 +132,10 @@ body{
         font-size: 12px;
       }
     }
-    .section__label__one{
+    .section__label__name{
       margin-top: 23px;
     }
-    .section__label__two, .section__label__three{
+    .section__label, .section__label{
       margin-top: 24px;
     }
     .section__input{
@@ -159,7 +159,7 @@ body{
     }
     .section__submit{
       margin-top: 36px;
-      .section__submit__input{
+      &__input{
         max-width: 100%;
         font-size: 18px;
         font-weight: bold;
@@ -171,7 +171,7 @@ body{
         color: $white;
         transition: .2s all;
       }
-      .section__submit__input:hover{
+      &__input:hover{
         cursor: pointer;
         background-color: $btnSubmitHover;
       }
@@ -238,58 +238,3 @@ body{
     }
   }
 }
-// @media (max-width:526px) {
-//   body{
-//     .section{
-//       justify-content: center;
-//       align-items: center;
-//       .section__input--eye{
-//         left: 90px;
-//       }
-//       .section__submit{
-//         .section__submit__input{
-//           width: 220px;
-//         }
-//       }
-//     }
-//   }
-// }
-// @media (max-width:348px) {
-//   body{
-//     .from{
-//       header{
-//         .header__Link{
-//           flex-direction: column;
-//           justify-content: center;
-//           align-items: center;
-//           margin-top: 25px;
-//           .header__Link__borderLeft{
-//             width: 220px;
-//             order: 2;
-//             margin-top: 24px;
-//           }
-//           .header__Link__borderRight{
-//             width: 220px;
-//             margin-left: 0;
-//           }
-//         }
-//         .line{
-//           flex-direction: column;
-//           margin: 0;
-//           .line__left{
-//             margin-top: 20px;
-//             margin-right: 0;
-//           }
-//           .line__text{
-//             margin-top: 20px;
-//             margin-right: 0;
-//           }
-//           .line__right{
-//             margin-top: 20px;
-//           }
-//         }
-//       }
-//     }
-    
-//   }
-// }
